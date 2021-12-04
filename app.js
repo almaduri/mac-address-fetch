@@ -33,7 +33,7 @@ h1.addEventListener('click', (evt) => {
     body: JSON.stringify(data)
   }
 
-  fetch('http://localhost:3000/post', options)
+  fetch('https://almaduri-mac-address-api.herokuapp.com/post', options)
   .then(res => res.json())
   .then(macList => {
     tbody.innerHTML = ""
